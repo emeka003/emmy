@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAXE — West Africa Experience Expedition | Cultural + Adventure Travel Series</title>
+    <meta name="description" content="Follow the WAXE expedition across Lagos, Kumasi, Benin and beyond — cultural experiences, beach parties, adventure sports, fintech demos and brand collaborations." />
+    <meta name="keywords" content="West Africa travel, Lagos travel, Ghana tourism, African adventure, Flutterwave partner" />
+    <meta property="og:image" content="/assets/og/waxe-og.jpg" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#D9534F',   // Reddish
+              secondary: '#23395B', // Dark Blue
+              accent: '#F5C156',    // Yellow/Gold
+              neutral: '#F7F7F7',   // Light Gray
+              dark: '#111827',      // Near Black
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Montserrat', 'sans-serif'],
+            },
+            backgroundImage: {
+              'hero-pattern': "linear-gradient(to bottom, rgba(35, 57, 91, 0.4), rgba(17, 24, 39, 0.8))",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D9534F;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #c9302c;
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-neutral text-dark font-sans antialiased selection:bg-primary selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
