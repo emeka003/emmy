@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import { Play, ArrowRight, Camera, Activity, Map } from 'lucide-react';
 import { Button } from '../components/Button';
 import { Section } from '../components/Section';
@@ -33,10 +33,13 @@ export const Home: React.FC = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">One West African story.</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-100 mb-10 max-w-3xl mx-auto leading-relaxed font-medium drop-shadow-md">
-            A cinematic 3–5 week journey through Lagos, Kumasi, Benin and beyond — culture, adventure, fintech and nightlife.
+            A cinematic 3–5 week journey through Lagos, Kumasi, Benin and beyond — culture, adventure and nightlife.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button to="/sponsors" variant="primary">
+            <Button to="/booking" variant="primary">
+              Book Your Journey
+            </Button>
+            <Button to="/sponsors" variant="secondary">
               Sponsor the Expedition
             </Button>
             <Button to="/itinerary" variant="outline" className="border-white text-white hover:bg-white hover:text-secondary">

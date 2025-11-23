@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
             <h2 className="text-3xl font-heading font-black text-white mb-4">WAXE</h2>
             <p className="text-gray-300 max-w-md leading-relaxed">
               A cinematic 3–5 week journey through Lagos, Kumasi, Benin and beyond. 
-              Documenting culture, adventure, fintech, and nightlife across West Africa.
+              Documenting culture, adventure and nightlife across West Africa.
             </p>
             <div className="mt-6 flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-accent transition-colors"><Instagram size={24} /></a>
@@ -27,6 +27,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/episodes" className="text-gray-300 hover:text-white transition-colors">Episodes</Link></li>
               <li><Link to="/sponsors" className="text-gray-300 hover:text-white transition-colors">Sponsorship</Link></li>
               <li><Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">Join the Team</Link></li>
+              <li><Link to="/booking" className="text-gray-300 hover:text-white transition-colors">booking</Link></li>
             </ul>
           </div>
 

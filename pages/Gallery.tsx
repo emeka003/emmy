@@ -5,11 +5,18 @@ import { PenTool, Image as ImageIcon } from 'lucide-react';
 export const Gallery: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'photos' | 'tattoos'>('photos');
 
-  // Generating placeholders
-  const images = Array.from({ length: 9 }).map((_, i) => ({
-    src: `https://picsum.photos/600/${i % 2 === 0 ? '800' : '600'}?random=${i + 50}`,
-    alt: `Gallery Image ${i + 1}`
-  }));
+ // Mauritius holiday photos
+  const images = [
+    { src: 'https://images.unsplash.com/photo-1520454974749-611b7248ffdb?w=800&q=80', alt: 'Beach Paradise' },
+    { src: 'https://images.unsplash.com/photo-1583037189850-1921ae7c6c22?w=800&q=80', alt: 'Crystal Clear Waters' },
+    { src: 'https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800&q=80', alt: 'Tropical Coastline' },
+    { src: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80', alt: 'Palm Trees and Ocean' },
+    { src: 'https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=800&q=80', alt: 'Sunset in Mauritius' },
+    { src: 'https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=800&q=80', alt: 'Underwater World' },
+    { src: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80', alt: 'Island Resort View' },
+    { src: 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=800&q=80', alt: 'Turquoise Lagoon' },
+    { src: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=800&q=80', alt: 'Beach Panorama' }
+  ];
 
   const tattooDesigns = [
     { id: "tat1", name: "Adinkra Wave", usage: "Temporary Sticker", color: "bg-black" },
